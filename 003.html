@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var x, y, z
+    x = 5;
+    y = 9;
+    y++;
+    //y에 하나를 더하겠다
+    x--;
+    //x에 하나를 빼겠다
+    --x;
+    //x에 하나를 빼겠다 (동일)
+    ++x;
+    //다시 하나를 더함!
+    x = x + 2; 
+    //=>누적 연산자로 변경
+    x += 2;
+    //더하고 바로 결과값
+    x *= 2;
+    //곱하고 바로 결과 값
+
+    var 이름 = '문호균'
+    var 나이 = 10;
+    
+    //틸트 : 반복되게 붙이는 값이 있는 건 불편해서 나온 templat litereary
+    document.write(`제 이름은 ${이름}입니다. 제 나이는 ${나이}입니다.`)
+    //틸트의 연산도 가능
+    document.write(`제 이름은 ${이름}입니다. 제 나이는 ${나이+나이}입니다.`)
+  </script>
+</body>
+
+</html>
