@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 1. 변수들의 연산
+
+    // 규칙
+    // 규칙-1. 문자, 숫자, 기호 $_만 사용
+    // 규칙-2. 첫글자 숫자 X
+    // 규칙-3. 대소문자 구별
+    // 규칙-4. var 같은 예약어 사용 X
+
+    var 변수하나 = 20;
+    var 변수둘 = 10;
+    var 변수셋 = 2;
+
+    // 2. 변수 연산 6개
+    //('변수하나/변수둘 : ', 변수하나/변수둘); 사이에 , 가 있으면 
+    // 두개의 자료형을 가져온다. 
+    // ('문자형', 숫자형) 구조임
+
+    document.write('변수하나 : ', 변수하나);
+    document.write('<br>');
+    document.write('변수둘 : ', 변수둘);
+    document.write('<br>');
+    document.write('변수셋 : ', 변수셋);
+    document.write('<br>');
+    document.write('1. 덧셈 연산. 변수하나+변수둘 : ', 변수하나 + 변수둘);
+    document.write('<br>');
+    document.write('2. 뺄셈 연산. 변수하나-변수둘 : ', 변수하나 - 변수둘);
+    document.write('<br>');
+    document.write('3. 곱셈 연산. 변수하나*변수둘 : ', 변수하나 * 변수둘);
+    document.write('<br>');
+    document.write('4. 나눗셈 연산. 변수하나/변수둘 : ', 변수하나 / 변수둘);
+    document.write('<br>');
+    document.write('5. 제곱 연산. 변수하나**변수셋 : ', 변수하나 ** 변수셋);
+    document.write('<br>');
+    document.write('6. 나머지 연산. 변수하나%변수셋 : ', 변수하나 % 변수셋);
+
+    // 3. 변수선언 종류
+    //const: 변하지 않을 변수에 지정해준다.
+    //let: 변동이 있을 변수에 지정. 
+    //다음에 쓸 땐 let을 안써줘도 된다. 이미 변수명이 있기 때문
+
+    const 이름 = '이호준;'
+    const 소속 = '제주코딩베이스캠프 운영진입니다.;'
+    let 주소 = '서울'
+    주소 = '제주'
+  </script>
+</body>
+
+</html>
