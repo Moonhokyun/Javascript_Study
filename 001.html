@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1 id="one">hello</h1>
+  <script>
+    var name = '이호준';
+    var age = 10;
+    // 1. 변수 선언-(변수명)= '이호준'
+    // 2. 변수 선언-(변수명)= 10
+
+    document.write(name);
+    window.alert(name);
+    console.log(name);
+    document.getElementById('one').innerHTML = 'hello javascript!'
+    // 1. document.writ(변수명) : 값을 출력한다
+    // 2. console.log (변수명) : 값을 출력한다
+    // 3. window.alert (변수명) : 경고창으로 출력한다.
+    // 4. document.getElementById('아이디').innerHTML = "넣을 값" : id 지정해 준 태그의 값을 바꾼다
+    
+    document.write('<br>');
+    // 4. document.writ('태그') : 태그를 사용한다.
+  </script>
+</body>
+
+</html>
