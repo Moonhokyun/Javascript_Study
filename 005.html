@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 논리연산! 
+    //and = 곱 (앤곱), or = 합 (오합) , true = 1, 0외의 숫자 , false= 0
+
+    document.write(`true || true : ${true||true}<br>`); // 1+1=2=true // 0 아니면 다 true임
+    document.write(`true || false : ${true||false}<br>`); // 1+0=1=true // 0 아니면 다 true임
+    document.write(`false || true : ${false||true}<br>`); // 0+1=1=true // 0 아니면 다 true임
+    document.write(`false || false : ${false||false}<br>`); // 0+0=0=false // 0이면 다 false
+    // 둘 중 하나라도 true면 다 true다
+
+    document.write(`true && true : ${true&&true}<br>`); // 1*1=1=true // 0 아니면 다 true임
+    document.write(`true && false : ${true&&false}<br>`); // 1*0=0=false // 0이면 다 false
+    document.write(`false && true : ${false&&true}<br>`); // 0*1=0=false // 0이면 다 false
+    document.write(`false && false : ${false&&false}<br>`); // 0*0=0=false // 0이면 다 false
+    // 둘 중 하나라도 false면 다 false다
+
+    document.write(`!true : ${!true}<br>`); // !는 반대로 효과. 
+    document.write(`!false : ${!false}<br>`);
+    //개념 끝
+
+    //&& 응용 1
+    // let x = 10;
+    // document.write(`x%3== 0 && x%5 == 0 : ${x%3== 0 && x%5 == 0}<br>`);
+    //10 나누기 3의 나머지 값은 1
+    //1은 0과 같나요? == false
+    //뒤에 && == * 
+    //뒤에 볼 것도 없이 false겠군
+    
+    //&& 응용 2
+    // let x = 12;
+    // document.write(`x%3== 0 && x%5 == 0 : ${x%3== 0 && x%5 == 0}<br>`);
+    //12 나누기 3의 나머지 값은 0
+    //0은 0과 같나요? == true
+    //12 나누기 5의 나머지 값은 2
+    //2는 0과 같나요? == false
+    //그럼 당연히 결과 false
+    
+    //&& 응용 3
+    let x = 15;
+    document.write(`x%3== 0 && x%5 == 0 : ${x%3== 0 && x%5 == 0}<br>`);
+    //15 나누기 3의 나머지 값은 0
+    //0은 0과 같나요? == true
+    //15 나누기 5의 나머지 값은 0
+    //0는 0과 같나요? == true
+    //그럼 당연히 결과 true
+  </script>
+</body>
+
+</html>
