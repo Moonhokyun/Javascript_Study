@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //document.write(10 + 10); //숫자형은 더함
+    //document.write('10+10'); //문자형은 이어붙임
+    let one = 1;
+    document.write(`<p> one + one : ${one + one} </p>`);
+    document.write(`<p> String(one) + String(one) : ${String(one) + String(one)} </p>`);
+    //미췽~대문자 안써줬다고 출력 안됐음
+    let two = '2';
+    document.write(`<p> two + two : ${two + two} </p>`);
+    document.write(`<p> Number(two) + Number(two) : ${Number(two) + Number(two)} </p>`);
+
+    let three = two + two;
+    document.write(`<p> typeof(three) : ${typeof(three)} </p>`)
+  
+    document.write(`<p> Boolean(1) : ${Boolean(1)} </p>`)
+    document.write(`<p> Boolean(0) : ${Boolean(0)} </p>`)
+    document.write(`<p> Boolean(' ') : ${Boolean(' ')} </p>`)
+    document.write(`<p> Boolean('') : ${Boolean('')} </p>`)
+    document.write(`<p> Boolean([]) : ${Boolean([])} </p>`)
+    document.write(`<p> Boolean([0]) : ${Boolean([0])} </p>`)
+    document.write(`<p> Boolean('0') : ${Boolean('0')} </p>`)
+  </script>
+</body>
+
+</html>
