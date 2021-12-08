@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var x, y;
+    x=10;
+    y=20;
+    Z='10';//문자열
+
+    document.write(x > y, '<br>'); //false
+    document.write(x < y, '<br>'); //true
+    document.write(x >= y, '<br>'); //false
+    document.write(x <= y, '<br>'); //true
+    
+    document.write(`x == z : ${x == z} <br>`); // 타입을 안 봄//true 
+    document.write(`x === z : ${x === z} <br>`); //타입까지 봄 (좀 더 엄격)//false 
+    document.write(`x != y : ${x != y} <br>`); // 둘이 다르냐?//true 
+
+  </script>
+</body>
+</html>
