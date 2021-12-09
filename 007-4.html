@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //함수 선언문 : 어디서든 호출이 가능하다. 
+    //ex. document.write (sum(10, 20));
+    // 이렇게 있으면 위 식이 위에 있든 아래에 있든 호출이 가능
+    function sum(x, y) {
+      return x + y;
+    }
+    //함수 표현식 : 아래에서만 호출이 가능하다. 
+    //ex. document.write (sumXY(10, 20));가 무조건 아래에 있어야 함
+    let sumXY = function(x, y) {
+      return x + y;
+    };
+
+    //콜백함수
+    function sum(x, y, c) {
+      c(x + y)
+      return x + y;
+    }
+
+    function documentWrite(s) {
+
+    }
+    //인자값으로 s라는 값이 들어오면
+    //s를 documentWrite 로 찍어주는 역할만 해준다.
+  </script>
+
+</body>
+
+</html>
