@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //지역 변수 전역 변수
+    function sum(x) {
+    // x == 매개변수 == parameter == 지역변수 라고도 함 : 변하는 값
+    let y = 50;
+    return x + y;
+  }
+
+  document.write(sum(10));
+  // 10은 전달인자 == argument
+  document.write('<br>')
+  document.write(x, y);
+  //여기서 x, y의 값은 나오지 않는다. 
+  //왜냐하면 x==10, y ==50은 함수내의 값. 즉 지역변수이기 때문입니다. 
+  </script>
+  
+</body>
+</html>

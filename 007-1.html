@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button type="button" onclick="test();"name="button">눌러!</button>
+  <script>
+    //함수 : 기능 단위의 묶음
+    //함수를 써주는 이유는
+    // 1. 가독성 좋은 코드 만들기 
+    // 2. 재사용성 때문이다
+
+    //함수는 반환해주는 return이 없으면 undefined가 된다.
+    //HTML 버튼을 통해 호출도 할 수 있다. 
+
+// function circle(r){
+//   return r*r*3.14
+// };
+// }; 이게 기본 틀
+
+// document.write (circle(10));
+// // 이런 식으로 함수를 불러올 땐 (함수)를 꼭!!
+
+function circle(r){
+  return r*r*3.14
+};
+
+document.write (circle(10));
+// 이런 식으로 함수를 불러올 땐 (함수)를 꼭!!
+
+function test(){
+  document.write('hello world!!')
+}
+  </script>
+</body>
+</html>
