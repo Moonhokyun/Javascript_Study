@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //자료형-객체 (object)
+    //개념이나 속성들의 묶음
+    function sum(x, y) {
+      return x + y;
+    }
+
+    let person = {
+      name: '이호준',
+      age: 10,
+      height: 30,
+      weight: 40,
+      이력: {
+        '첫번째 직장': '하나',
+        '두번째 직장': '둘'
+      },
+      기능: sum
+
+      //앞에를 key, 뒤에꺼를 value라 부름
+    }
+    person.소속 = '바울랩';
+
+    //이렇게 한 묶음임. 어떻게 호출?
+
+    //호출 방법 1
+    document.write(`제 이름은 ${person.name}입니다.<br>`);
+    document.write(`제 나이는 ${person.age}입니다.<br>`);
+    document.write(`제 키는 ${person.height}입니다.<br>`);
+    document.write(`제 무게는 ${person.weight}입니다.<br>`);
+
+    //호출 방법 2
+    document.write(`제 이름은 ${person['name']}입니다.<br>`);
+    document.write(`제 나이는 ${person['age']}입니다.<br>`);
+    document.write(`제 키는 ${person['height']}입니다.<br>`);
+    document.write(`제 무게는 ${person['weight']}입니다.<br>`);
+  </script>
+</body>
+
+</html>
