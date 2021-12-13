@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로또 번호 추첨기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>로또 번호 추첨기</h1>
+  <script>
+    var lotto = []; //1. lotto라는 변수를 만들고, 값이 들어갈 array를 만들었다
+    while (lotto.length < 6) { 
+    //반복문 : 처음에는 for문으로 6번만 돌게 만들었다가, 
+    //중복되는 경우 하나씩 빠져야 하기 때문에 
+    // while문 안에 조건을 넣어 배열안의 값이 6개가 될 때 까지 반복
+      var num = parseInt(Math.random() * 45 + 1);
+      // 반복문 내에 num 이라는 변수를 만들어, 여기서 1부터 45까지 뽑게 만듬
+      // 임의의 숫자를 뽑기 위해 Math.random 사용. 여기에 45를 곱하고 1을 더해 범위 내 숫자가 나오게 설정
+      // parseInt를 사용해 실수를 정수로 만듬
+      if (lotto.indexOf(num) == -1) {
+        // indexOf를 통해 값을 찾아주고 중복값 제거
+        // 배열안에 값이 있으면 위치번호가 나오고, 값이 없으면 -1이 나옴
+
+        lotto.push(num);
+        // lotto 변수에 push를 통해 뒤에서부터 num 값을 넣는다
+      }
+    }
+    lotto.sort((a, b) => a - b);
+    // lotto array를 sort를 통해 정렬. 
+    // ((a, b) => a - b)를 통해 수의 오름차순 정렬
+    document.write("<div class='ball ball1'>" + lotto[0] + "</div>");
+    document.write("<div class='ball ball2'>" + lotto[1] + "</div>");
+    document.write("<div class='ball ball3'>" + lotto[2] + "</div>");
+    document.write("<div class='ball ball4'>" + lotto[3] + "</div>");
+    document.write("<div class='ball ball5'>" + lotto[4] + "</div>");
+    document.write("<div class='ball ball6'>" + lotto[5] + "</div>");
+  </script>
+</body>
+
+</html>
