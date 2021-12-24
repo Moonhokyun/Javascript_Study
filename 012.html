@@ -25,20 +25,37 @@
     //   document.write('else문으로 실행되었습니다.')
     // }
 
-    let score = 89;
+    // let score = 89;
+    // let money = 1000;
+
+    // if (score > 90) {
+    //   document.write('참 잘했어요!<br>');
+    //   money += 100000
+    // }
+    // if (score > 80) {
+    //   document.write('잘했어요!<br>');
+    //   money += 10000
+    // }
+    // if (score > 70) {
+    //   document.write('했어요!<br>');
+    //   money += 1000
+    // }
+    // document.write(money);
+
+    let score = 69;
     let money = 1000;
 
     if (score > 90) {
       document.write('참 잘했어요!<br>');
       money += 100000
-    }
-    if (score > 80) {
+    } else if (score > 80) {
       document.write('잘했어요!<br>');
       money += 10000
-    }
-    if (score > 70) {
+    } else if (score > 70) {
       document.write('했어요!<br>');
       money += 1000
+    } else {
+      money = 0      
     }
     document.write(money);
 
